@@ -38,4 +38,4 @@ const chainProcess = (goal1, parent) => ({
     chain: childGoal => chainProcess(childGoal, chainProcess(goal1, parent))
 });
 
-export default chainProcess;
+module.exports = chainProcess;
