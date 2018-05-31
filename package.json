@@ -1,6 +1,6 @@
 {
   "name": "chainprocess",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodejs utility to chain executable commands with js functions as a promise chain of processes",
   "main": "chainprocess.js",
   "scripts": {
