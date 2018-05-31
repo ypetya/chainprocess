@@ -1,0 +1,27 @@
+{
+  "name": "chainprocess",
+  "version": "1.0.0",
+  "description": "Nodejs utility to chain executable commands with js functions as a promise chain of processes",
+  "main": "chainprocess.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ypetya/chainprocess.git"
+  },
+  "keywords": [
+    "process",
+    "chain",
+    "node",
+    "promise",
+    "functional",
+    "utility"
+  ],
+  "author": "Peter Kiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ypetya/chainprocess/issues"
+  },
+  "homepage": "https://github.com/ypetya/chainprocess#readme"
+}
