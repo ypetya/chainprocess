@@ -24,12 +24,15 @@ const call = (fn, input) => new Promise((resolve,reject) => {
         return;
     }
     resolve(outcome);
-})
+});
 
-const runChild = (goal, input) =>
-    typeof goal === 'string' ?
-        execute(goal) :
-        call(goal, input);
+const runChild = (goal, input) => {
+    switch(typeof goal) {
+        case 'string': return execute(goal);
+        case 'function': return call(goal, input);
+        case 'undefined': return execute(input);
+    }
+};
 
 const chainProcess = (goal1, parent) => ({
     run: input => parent ?
